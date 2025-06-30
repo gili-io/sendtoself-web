@@ -46,7 +46,7 @@ header {
     gap: 12px;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #000;
+    color: #333;
     text-decoration: none;
 }
 
@@ -90,7 +90,7 @@ main {
     font-weight: 700;
     margin-bottom: 24px;
     line-height: 1.1;
-    color: #000;
+    color: #333;
 }
 
 .hero-subtitle {
@@ -113,7 +113,7 @@ main {
 
 .btn-primary {
     display: inline-block;
-    background: #000;
+    background: #007AFF;
     color: #fff;
     padding: 16px 32px;
     border-radius: 8px;
@@ -121,12 +121,12 @@ main {
     font-weight: 500;
     font-size: 1rem;
     transition: all 0.2s;
-    border: 2px solid #000;
+    border: 2px solid #007AFF;
 }
 
 .btn-primary:hover {
-    background: #333;
-    border-color: #333;
+    background: #0066CC;
+    border-color: #0066CC;
 }
 
 .app-store-text {
@@ -174,9 +174,9 @@ main {
 }
 
 .value-prop.highlight {
-    background: #000;
+    background: #007AFF;
     color: #fff;
-    border-color: #000;
+    border-color: #007AFF;
 }
 
 .value-prop.highlight h3 {
@@ -184,18 +184,14 @@ main {
 }
 
 .value-prop.highlight p {
-    color: #ccc;
+    color: rgba(255,255,255,0.9);
 }
 
-.value-icon {
-    font-size: 2.5rem;
-    margin-bottom: 24px;
-}
 
 .value-prop h3 {
     font-size: 1.2rem;
     margin-bottom: 16px;
-    color: #000;
+    color: #333;
     font-weight: 600;
 }
 
@@ -215,7 +211,7 @@ main {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    color: #000;
+    color: #333;
     font-weight: 700;
 }
 
@@ -230,15 +226,11 @@ main {
     padding: 32px 24px;
 }
 
-.feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 24px;
-}
 
 .feature h3 {
     font-size: 1.3rem;
     margin-bottom: 16px;
-    color: #000;
+    color: #333;
     font-weight: 600;
 }
 
@@ -258,7 +250,7 @@ main {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    color: #000;
+    color: #333;
     font-weight: 700;
 }
 
@@ -276,7 +268,7 @@ main {
 .step-number {
     width: 48px;
     height: 48px;
-    background: #000;
+    background: #007AFF;
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -290,7 +282,7 @@ main {
 .step h3 {
     font-size: 1.2rem;
     margin-bottom: 16px;
-    color: #000;
+    color: #333;
     font-weight: 600;
 }
 
@@ -310,7 +302,7 @@ main {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    color: #000;
+    color: #333;
     font-weight: 700;
 }
 
@@ -352,7 +344,7 @@ main {
     font-size: 2.5rem;
     margin-bottom: 24px;
     font-weight: 700;
-    color: #000;
+    color: #333;
 }
 
 .cta-final p {
@@ -367,9 +359,10 @@ main {
 
 /* Footer */
 footer {
-    background: #000;
-    color: #fff;
+    background: #f8f9fa;
+    color: #666;
     padding: 60px 0 20px;
+    border-top: 1px solid #e0e0e0;
 }
 
 .footer-content {
@@ -382,12 +375,12 @@ footer {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 20px;
-    color: #fff;
+    color: #333;
     font-weight: 600;
 }
 
 .footer-section p {
-    color: #ccc;
+    color: #666;
     font-weight: 400;
 }
 
@@ -413,8 +406,8 @@ footer {
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #333;
-    color: #ccc;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
     font-weight: 400;
 }
 

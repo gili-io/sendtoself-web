@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,10 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: #333;
+    background: #ffffff;
 }
 
 .container {
@@ -18,8 +21,8 @@ body {
 
 /* Header */
 header {
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,9 +41,18 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #007AFF;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
 }
 
 .nav-links {
@@ -51,9 +63,9 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
+    color: #666;
+    font-weight: 400;
+    transition: color 0.2s;
 }
 
 .nav-links a:hover {
@@ -67,56 +79,144 @@ main {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #007AFF 0%, #0051D0 100%);
-    color: white;
+    background: #ffffff;
+    color: #333;
     text-align: center;
-    padding: 100px 0;
+    padding: 120px 0 100px;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.2;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    color: #000;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.9;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: #666;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 400;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 48px;
+    color: #999;
+    font-weight: 400;
 }
 
 .btn-primary {
     display: inline-block;
-    background: #fff;
-    color: #007AFF;
-    padding: 15px 30px;
-    border-radius: 50px;
+    background: #000;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+    border: 2px solid #000;
 }
 
 .btn-primary:hover {
+    background: #333;
+    border-color: #333;
+}
+
+.app-store-text {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.app-store-main {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cta-subtitle {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Value Props Section */
+.value-props {
+    padding: 100px 0;
+    background: #fafafa;
+}
+
+.value-prop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.value-prop {
+    text-align: center;
+    padding: 40px 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    transition: all 0.2s;
+}
+
+.value-prop:hover {
+    border-color: #e0e0e0;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.value-prop.highlight {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.value-prop.highlight h3 {
+    color: #fff;
+}
+
+.value-prop.highlight p {
+    color: #ccc;
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+}
+
+.value-prop h3 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.value-prop p {
+    color: #666;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 /* Features Section */
 .features {
     padding: 100px 0;
-    background: #f8f9fa;
+    background: #ffffff;
 }
 
 .features h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    color: #333;
+    color: #000;
+    font-weight: 700;
 }
 
 .features-grid {
@@ -127,38 +227,39 @@ main {
 
 .feature {
     text-align: center;
-    padding: 40px 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
+    padding: 32px 24px;
 }
 
-.feature:hover {
-    transform: translateY(-5px);
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
 }
 
 .feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #007AFF;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: #000;
+    font-weight: 600;
 }
 
 .feature p {
     color: #666;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 /* How It Works Section */
 .how-it-works {
     padding: 100px 0;
+    background: #fafafa;
 }
 
 .how-it-works h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    color: #333;
+    color: #000;
+    font-weight: 700;
 }
 
 .steps {
@@ -169,38 +270,105 @@ main {
 
 .step {
     text-align: center;
-    padding: 40px 20px;
+    padding: 32px 24px;
 }
 
 .step-number {
-    width: 60px;
-    height: 60px;
-    background: #007AFF;
-    color: white;
+    width: 48px;
+    height: 48px;
+    background: #000;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0 auto 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 auto 24px;
 }
 
 .step h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: #000;
+    font-weight: 600;
 }
 
 .step p {
     color: #666;
     line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Why Free Section */
+.why-free {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.why-free h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #000;
+    font-weight: 700;
+}
+
+.why-free-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.why-free-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    color: #666;
+    font-weight: 400;
+}
+
+.why-free-text ul {
+    margin: 32px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.why-free-text li {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: #666;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* CTA Final Section */
+.cta-final {
+    padding: 100px 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+.cta-final h2 {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.cta-final p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: white;
+    background: #000;
+    color: #fff;
     padding: 60px 0 20px;
 }
 
@@ -214,7 +382,13 @@ footer {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 20px;
-    color: #007AFF;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: #ccc;
+    font-weight: 400;
 }
 
 .footer-section ul {
@@ -222,24 +396,26 @@ footer {
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .footer-section a {
-    color: #ccc;
+    color: #007AFF;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.2s;
+    font-weight: 400;
 }
 
 .footer-section a:hover {
-    color: #007AFF;
+    color: #0066CC;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #555;
+    border-top: 1px solid #333;
     color: #ccc;
+    font-weight: 400;
 }
 
 /* Responsive Design */
@@ -249,11 +425,17 @@ footer {
     }
     
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    .hero {
+        padding: 80px 0 60px;
     }
     
     .features h2,
-    .how-it-works h2 {
+    .how-it-works h2,
+    .why-free h2,
+    .cta-final h2 {
         font-size: 2rem;
     }
     
@@ -262,15 +444,25 @@ footer {
     }
     
     .container {
-        padding: 0 15px;
-    }
-    
-    .hero {
-        padding: 80px 0;
+        padding: 0 16px;
     }
     
     .features,
-    .how-it-works {
+    .how-it-works,
+    .why-free,
+    .cta-final,
+    .value-props {
         padding: 80px 0;
+    }
+    
+    .value-prop-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .features-grid,
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 }
